@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        Course Name<input type="text" id="courseName" value="CMSC335">
+        <input type="button" value="GetTAsNames" onclick="displayNames()">
+        <h3>Information</h3>
+        <div id="display"></div>
+        <script>
+            async function diplayNames(){
+                const courseName=document.querySelector("#courseName").value;
+                const filename="tas.json";
+                const response=await fetch(filename);
+                const data=await response.json();
+                let noTAsFound =true;
+                let table ="";
+                data.forEach((entry) =>{
+                    if(entry.course ===courseName){
+                        noTAsFound =false;
+                        table += '<tr><td>${entry.name}</td><td>${entry.course}</td></tr>';
+                    }
+                });
+                if(noTAsFound){
+                    table ="No TA Available"
+                } else {
+                    const tableHeadSection = `<table border='1'><tr style="color:red"><th>Name</th><th>Course</th></tr>`;
+                        table='${tableHeadSection}${table}</table>';
+                }
+                    document.querySelector("#display").innerHTML =table;
+            }
+        </script>
+
+
+
+
+
+ </body>

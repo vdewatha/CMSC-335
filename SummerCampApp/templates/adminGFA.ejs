@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin GFA</title>
+  </head>
+  <body>
+    <h1>Display GFAs Greater than or Equal to</h1>
+
+    <form action="<%- URL %>" method="post">
+      <label for="gpa"><b>GPA: </b></label>
+      <input type="number" step="any" name="gpa" id="gpa" min="0" max="4" />
+
+      <input type="submit" value="Submit Request" />
+    </form>
+
+    <hr />
+
+    <a href="/">HOME</a>
+  </body>
+</html>

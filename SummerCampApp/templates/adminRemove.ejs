@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin GFA</title>
+  </head>
+  <body>
+    <h1>Removing All Applicants</h1>
+
+    <form action="<%- URL %>" method="post">
+      <input type="submit" value="Remove all applicants" />
+    </form>
+
+    <script>
+      window.onsubmit = function submitDataConfirm() {
+        let answer = window.confirm(
+          "Are you sure you want to remove all applications?"
+        );
+        if (answer) {
+          return true;
+        } else return false;
+      };
+    </script>
+
+    <hr />
+
+    <a href="/">HOME</a>
+  </body>
+</html>

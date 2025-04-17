@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terp Store.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="green">
+        <h1><u>Catalog Inquiry</u></h1>
+
+        <div id="fc">
+            <form method="get" action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php">
+                <fieldset>
+                    <label for="itemCategory">Item Category</label>
+                    <input type="text" list="item-choice" name="item-choice" id="itemCategory" required autofocus>
+                    <datalist id="item-choice">
+                        <option value="clothes"></option>
+                        <option value="books"></option>
+                        <option value="music"></option>
+                        <option value="food"></option>
+                        <option value="other"></option>
+                    </datalist>
+                    <br>
+
+                    <label for="maximumCost">Maximum Cost ($)</label>
+                    <input type="number" min="1" max="1000" value="1" step="5" name="maximumCost" id="maximumCost">
+                    <br>
+
+                    <input type="checkbox" name="availableOnCampus" id="availableOnCampus">
+                    <label for="availableOnCampus">Available on Campus</label>
+                    <br>
+
+                    <input type="checkbox" name="availableOnline" id="availableOnline" checked>
+                    <label for="availableOnline">Available Online</label>
+                    <br>
+
+                    <label for="info">Additional Information</label>
+                    <br>
+                    <textarea name="info" id="info" cols="60" rows="10"></textarea>
+                    <br>
+
+                    <label for="email">Contact Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="example@terpmail.umd.edu">
+                    <br>
+
+                    <input type="submit" value="Submit Inquiry" class="button">
+                    <input type="reset" value="Clear" class="button">
+
+                </fieldset>
+            </form>
+        </div>
+
+        <!--#include virtual="footer.shtml" -->
+    </div>
+
+
+</body>
+
+</html>

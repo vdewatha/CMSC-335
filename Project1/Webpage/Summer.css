@@ -1,0 +1,102 @@
+body {
+    background-color: antiquewhite;
+    margin: 1rem; 
+    padding: 1rem;
+    width: 48rem;
+    height: 62rem;
+    border:thick double;
+    border-color: brown;
+    text-align: left;
+    
+}
+#borderbody{
+    border:.8rem ridge blue;
+    background-color: white;
+    padding: 3rem;
+}
+.title h2{
+    
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+.poster{
+    border-bottom: double;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#logo1{
+    
+    float: left;
+    width: 13%;
+    height:auto;
+}
+
+#logo2{
+    
+  margin-top: 2.3rem;
+  float: left;
+  width: 87%;
+  height:auto;
+}
+
+
+table, th, td {
+    border: .1rem solid;
+    
+  }
+tr#ROW1{
+    background-color: antiquewhite;
+  }
+
+
+.description p:hover{
+    color: red;
+}
+.description p{
+    
+    color: brown;
+}
+.description::first-letter{
+    initial-letter: 2 1;
+    
+}
+
+
+
+ .additional-info p, .footer p {
+    text-align: justify;
+    color: black;
+}
+
+.schedule h3, .resources h3, .additional-info h3 {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+}
+.schedule a {
+    color: blue;
+}
+
+
+.resources a {
+    color: blue;
+    
+}
+
+
+.footer img{
+    width:1.7rem;
+    height:.9rem
+}
+#info{
+    color: brown;
+}
+.footer {
+    
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}

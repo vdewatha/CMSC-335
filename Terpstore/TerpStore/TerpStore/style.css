@@ -1,0 +1,144 @@
+input[type="checkbox"] {
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  padding: 10px;
+}
+
+html {
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+body {
+  margin: 0;
+  width: 105vh;
+  height:101vh;
+  border: 0.5rem solid white;
+}
+
+
+html {
+  font-size: 12px;
+  font-family: Arial, Tahoma, sans-serif;
+  
+}
+h1 {
+  font-size: 1.8cm;
+  color: azure;
+  margin: 0.5rem 0 0 1rem;
+}
+
+
+#md {
+  display: flex;
+  flex-direction: column;
+  height: 1.8cm;
+  width: 9cm;
+  background-color: rgba(211, 211, 211, 0.8);
+  border: 0.15rem solid black;
+  text-align: center;
+}
+h1 u {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#green {
+  background-size: 125% 100%;
+  display: flex;
+  flex-direction: column;
+  height: 25cm; 
+  border: 0.6rem solid green;
+  background-image: url(images/JimHenson.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+#ms {
+  align-items: center;
+  justify-content: center;
+  min-height: 21cm;
+  display: flex;
+  
+}
+
+
+#fc {
+  min-height: 19cm;
+  padding: 5vh 0 0 5vh;
+}
+p,
+a {
+  font-size: 0.7cm;
+  color: brown;
+}
+
+a:visited {
+  color: beige;
+}
+
+
+fieldset {
+  border: .21cm solid azure;
+  background-color: rgba(255, 255, 255, 0.85);
+  font-size: 0.66cm;
+  padding: 0.66cm 0.66cm;
+  width: max-content;
+}
+
+fieldset label {
+  text-decoration: underline;
+}
+
+#email {
+  width: 6cm;
+}
+
+a:hover {
+  font-size: 0.63cm;
+}
+
+#cc1,
+#cc2,
+#cc3,
+#cc4 {
+  width: 1.1cm;
+  height: 0.6cm;
+}
+.hyphen {
+  text-decoration: none;
+}
+fieldset input {
+  margin: 1vh 0;
+  font-size: 0.4cm;
+  border: 0.3rem solid red;
+}
+.button {
+  border-radius: .21cm;
+  margin: 2vh 1vh;
+  width: 3.5cm;
+  height: 1.3cm;
+  border: 0.3rem double black;
+  
+}
+
+footer {
+  margin-top: auto;
+  border: .21cm solid skyblue;
+}
+
+footer div {
+ background-color: red;
+  align-items: center;
+  justify-content: center; 
+  display: flex;
+  border: .42cm ridge silver;
+  height: 1.8cm;
+}
+
+footer div a {
+  font-style: italic;
+}

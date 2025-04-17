@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Viewer</title>
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <div id="outsideFrame">
+        <h1 id="pageTitle">Photo Viewer</h1>
+
+        <div id="photoFrame">
+            <img id="photo" src="InitialImage.jpg" alt="Photo">
+        </div>
+
+        <form>
+            <fieldset id="status">
+                <legend>Status</legend>
+
+                <label for="displayedPhoto">Photo Being Displayed: </label>
+                <input type="text" name="displayedPhoto" id="displayedPhoto" disabled>    
+                <!-- Should I use here name & id or only one of them? -->
+
+                <p id="pageDescription">Photo Viewer System</p>
+            </fieldset>
+
+            <fieldset id="loadingImagesFolder">
+                <legend>Loading Images (Local Folder)</legend>
+
+                <label for="photosFolder">Photos` Folder: </label>
+                <input type="text" name="photosFolder" id="photosFolder" value="umcp/">
+                <label for="commonName">Common Name: </label>
+                <input type="text" name="commonName" id="commonName" value="college">
+                <br>
+                <label for="startPhotoNumber">Start Photo Number: </label>
+                <input type="text" name="startPhotoNumber" id="startPhotoNumber" value="2">
+                <label for="endPhotoNumber">End Photo Number: </label>
+                <input type="text" name="endPhotoNumber" id="endPhotoNumber" value="4">
+                <br>
+
+                <input id="loadPhotosButton" type="button" value="Load Photos">
+            </fieldset>
+
+            <fieldset id="loadingImagesJSON">
+                <legend>Loading Images (JSON File)</legend>
+                <label for="JSONURL">URL: </label>
+                <input type="url" name="JSONURL" id="JSONURL" value="http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/imagesSet1.json">
+                <input id="loadJSONButton" type="button" value="Load JSON">
+            </fieldset>
+
+            <fieldset id="iterating">
+                <legend>Iterating</legend>
+                <input id="previousPhotoButton" type="button" value="Previous Photo">
+                <input id="nextPhotoButton" type="button" value="Next Photo">
+                <input id="firstPhotoButton" type="button" value="First Photo">
+                <input id="lastPhotoButton" type="button" value="Last Photo">
+            </fieldset>
+
+            <fieldset id="slideShows">
+                <legend>SlideShows</legend>
+                <input id="slideShowButton" type="button" value="SlideShow">
+                <input id="randomSlideShowButton" type="button" value="RandomSlideShow">
+                <input id="stopSlideShowButton" type="button" value="StopSlideShow">
+            </fieldset>
+
+            <hr>
+
+            <input id="resetForm" type="reset" value="Reset Form Values">
+        </form>
+    </div>
+</body>
+</html>

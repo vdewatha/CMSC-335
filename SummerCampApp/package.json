@@ -1,0 +1,24 @@
+{
+  "name": "summercamp",
+  "version": "1.0.0",
+  "description": "Summer Camp Server. Stores name, GPA, email and Description.",
+  "main": "summerCampServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "GPA",
+    "student"
+  ],
+  "author": "Vishwa Dewatha Pejjalage",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongo": "^0.1.0",
+    "mongodb": "^6.11.0"
+  }
+}

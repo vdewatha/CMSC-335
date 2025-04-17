@@ -1,0 +1,11 @@
+{
+  "name": "supermarket",
+  "version": "1.0.2",
+  "description": "supermarket website",
+  "main": "supermarketServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vdewatha",
+  "license": "UNLICENSED"
+}
